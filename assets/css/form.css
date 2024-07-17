@@ -1,0 +1,88 @@
+  
+.postDetailCard {
+  /* width: 90%; */
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.postHeader {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.postDetailForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#label1 {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+select, input[type="text"], input[type="file"], input[type="datetime-local"], button{
+  border: 1px solid #3897f0;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: #3897f0;
+  box-shadow: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#button1 {
+  border: 1px solid #3897f0;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: #3897f0;
+  box-shadow: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#button1 {
+  background-color: #3897f0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#button1:hover {
+  background-color: #12171e;
+}
+
+
+
+/* //////////////////////errorcard///////////// */
+.error-card {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  padding: 20px 20px;
+  border-radius: 8px;
+  background-color: #860909;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: none;
+  }
+  
+  .error-card.success {
+  background-color: #3897f0;
+  color: #ffffff;
+  }
+  
+  .error-card.fail {
+  background-color: #f44336;
+  color: #ffffff;
+  }

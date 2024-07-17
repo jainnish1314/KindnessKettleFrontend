@@ -1,0 +1,94 @@
+/* CSS for the main content */
+#content-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+#content-container p {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    opacity: 0;
+    animation: fadeInText 2s ease infinite alternate;
+}
+
+#content-container img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    filter: brightness(40%);
+}
+
+#content-container h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInText 2s ease forwards;
+    text-align: center; /* Center text */
+}
+
+#content-container h2 {
+    font-size: 1.5rem; 
+    color: white;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInText 2s ease forwards;
+    text-align: center; /* Center text */
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 600px) {
+    #content-container h1 {
+        font-size: 2.5rem; 
+    }
+
+    #content-container h2 {
+        font-size: 2rem; 
+    }
+}
+
+@media (min-width: 768px) {
+    #content-container h1 {
+        font-size: 3rem; 
+    }
+
+    #content-container h2 {
+        font-size: 2.5rem; 
+    }
+}
+
+@media (min-width: 1024px) {
+    #content-container h1 {
+        font-size: 3.5rem; 
+    }
+
+    #content-container h2 {
+        font-size: 3rem; 
+    }
+}

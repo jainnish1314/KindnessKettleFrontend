@@ -1,0 +1,139 @@
+
+.registration-form-container {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: #444; 
+}
+
+
+.user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+
+.input-box {
+    flex: 0 1 calc(50% - 10px); 
+    margin-bottom: 15px;
+}
+
+
+.details {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; 
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff; 
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="submit"],
+input[type="button"] {
+    background-color: #0ab666;
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px; 
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #099d58;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .registration-form-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .user-details {
+        flex-direction: column; 
+    }
+
+    .input-box {
+        flex: 0 1 100%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    input[type="submit"],
+    input[type="button"] {
+        padding: 10px;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .registration-form-container {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    input[type="submit"],
+    input[type="button"] {
+        padding: 10px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .registration-form-container {
+        width: 70%;
+    }
+}
